@@ -17,15 +17,19 @@ Freezeframe is now written in / supports TypeScript! The library will still supp
 To get started using freezeframe 5:
 
 ```sh
-npm install freezeframe@5.0.1
+npm install freezeframe
 ```
 
 ```sh
-npm install vue-freezeframe@5.0.1
+npm install vue-freezeframe
 ```
 
 ```sh
-npm install react-freezeframe@5.0.1
+npm install react-freezeframe
+```
+
+```sh
+npm install angular-freezeframe
 ```
 
 Version 5+ is built with modern development in mind. It's transpiled from TypeScript to JavaScript, and it should
@@ -47,6 +51,7 @@ This is a [lerna.js](https://lerna.js.org/) monorepo, containing the following p
 - [freezeframe](./packages/freezeframe)
 - [vue-freezeframe](./packages/vue-freezeframe)
 - [react-freezeframe](./packages/react-freezeframe)
+- [angular-freezeframe](./packages/angular-freezeframe)
 
 ## How it works
 
