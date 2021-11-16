@@ -49,7 +49,9 @@ class ReactFreezeframe extends Component<Props, State> {
       }
     });
     this.$freezeframe.on("ready", () => {
-      this.props.onReady()
+      if(this.props.onReady) {
+        this.props.onReady()
+      }
     })
   }
 
