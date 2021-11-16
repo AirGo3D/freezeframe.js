@@ -12,7 +12,8 @@ export type TriggerType = string | false
 export enum FreezeframeEventTypes {
   START = 'start',
   STOP = 'stop',
-  TOGGLE = 'toggle'
+  TOGGLE = 'toggle',
+  READY = "ready"
 }
 
 export interface FreezeframeOptions {

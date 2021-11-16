@@ -12,7 +12,7 @@ export const stylesheet = () => (
 
 export const container = () => (
   html`
-    <div class="${classes.CONTAINER} ${classes.LOADING_ICON} ${classes.INACTIVE}">
+    <div class="${classes.CONTAINER} ${classes.LOADING_ICON}">
     </div>
   `
 );
