@@ -8,6 +8,7 @@ export type Props = {
   onStart?: (items: Freeze[], isPlaying: boolean) => void
   onStop?: (items: Freeze[], isPlaying: boolean) => void
   onToggle?: (items: Freeze[], isPlaying: boolean) => void
+  onReady?: () => void
 } & React.ImgHTMLAttributes<HTMLElement>
 
 export type State = {
@@ -47,6 +48,11 @@ class ReactFreezeframe extends Component<Props, State> {
         this.props.onToggle(items, isPlaying)
       }
     });
+    this.$freezeframe.on('ready', () => {
+      if(this.props.onReady) {
+        this.props.onReady()
+      }
+    })
   }
 
   componenWillUnmount() {

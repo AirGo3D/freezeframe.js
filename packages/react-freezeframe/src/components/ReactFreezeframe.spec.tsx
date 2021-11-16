@@ -35,4 +35,20 @@ describe('ReactFreezeframe.js', () => {
     expect(container.firstChild).toHaveClass('react-freezeframe')
     imgs.forEach(img => expect(img).toHaveAttribute('src', src))
   })
+
+  it('Render onReady', () => {
+    const { container } = render(
+      <ReactFreezeframe
+        onReady={() => console.log("onReady")}
+      >
+        <img src={src} alt="one"/>
+        <img src={src} alt="two"/>
+        <img src={src} alt="three"/>
+      </ReactFreezeframe>
+    );
+    const imgs = container.querySelectorAll('img')
+    expect(container.firstChild).toHaveClass('react-freezeframe')
+    imgs.forEach(img => expect(img).toHaveAttribute('src', src))
+  })
+  
 })

@@ -147,6 +147,7 @@ class Freezeframe {
     $container.classList.add(classes.READY);
     $container.classList.add(classes.INACTIVE);
     $container.classList.remove(classes.LOADING_ICON);
+    this._emit(FreezeframeEventTypes.READY, this.items, false);
   }
 
   private _attach(freeze: Freeze): void {

@@ -66,6 +66,11 @@ var ReactFreezeframe = /*#__PURE__*/function (_Component) {
           _this2.props.onToggle(items, isPlaying);
         }
       });
+      this.$freezeframe.on('ready', function () {
+        if (_this2.props.onReady) {
+          _this2.props.onReady();
+        }
+      });
     }
   }, {
     key: "componenWillUnmount",

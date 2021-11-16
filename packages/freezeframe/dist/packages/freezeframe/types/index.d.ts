@@ -6,7 +6,8 @@ export declare type TriggerType = string | false;
 export declare enum FreezeframeEventTypes {
     START = "start",
     STOP = "stop",
-    TOGGLE = "toggle"
+    TOGGLE = "toggle",
+    READY = "ready"
 }
 export interface FreezeframeOptions {
     selector?: SelectorOrNodes;
